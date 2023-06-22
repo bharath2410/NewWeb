@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #98FB98;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  color: black;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 65px;
+  text-align: centre;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.footer 
+{
+  padding: 5px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 18px;
+  font-size:0.6em;
+}
+
+</style>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  </head>
+
+
+  <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.php"><i style="font-size:24px" class="fa">&#xf015;</i> Home</a>
+  <a href="AboutUs.html" target="_blank"><i style="font-size:24px" class="fa">&#xf002;</i> About Us</a>
+  <a href="logout.php"><i style="font-size:24px" class="fa">&#xf08b;</i> Log Out</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Surkhet, NP12</div>
+            <div class="text-two">Birendranagar 06</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+91 8179056057</div>
+            <div class="text-two">+91 9701730714</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">antharyak.2003@gmail.com</div>
+            <div class="text-two">bannu2410@gmail.comS</div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+          <p>If you have any questions or any types of queries related to my website, please let me know. It's my pleasure to help you.</p>
+          
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Email" />
+            </div>
+          </form>
+
+        </div>
+      </div>
+<div class="footer">
+  <h2>&copy; 2023 Earth-Our Home Planet. All rights reserved.</h2>
+</div>
+    </div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+
+}
+</script>
+  </body>
+
+</html>
